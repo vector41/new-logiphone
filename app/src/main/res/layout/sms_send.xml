@@ -171,8 +171,9 @@
                 android:textSize="16sp"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
+                android:hint="@string/hint_enter_message"
                 android:layout_margin="5dp"
-                android:layout_gravity="center"
+                android:singleLine="true"
                 android:background="@android:color/transparent"
                 tools:ignore="LabelFor" />
 

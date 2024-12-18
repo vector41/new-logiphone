@@ -8,13 +8,14 @@
     android:orientation="vertical">
 
     <LinearLayout
+        android:id="@+id/favorite_list_search"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:orientation="horizontal"
         android:background="@drawable/input_search_radius"
-        android:paddingTop="2dp"
-        android:paddingBottom="2dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
         android:paddingStart="20dp"
         android:paddingEnd="12dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,8 +35,10 @@
             android:autofillHints="@string/content_search"
             android:inputType="text"
             android:maxHeight="16dp"
+            android:hint="@string/hint_search_contacts"
             android:layout_weight="1"
             android:textSize="16sp"
+            android:singleLine="true"
             android:paddingStart="5dp"
             android:paddingEnd="5dp"
             android:layout_gravity="center"
@@ -44,8 +47,8 @@
 
         <ImageView
             android:contentDescription="@string/content_search"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:layout_gravity="center"
             android:src="@drawable/ic_nav_menu" />
     </LinearLayout>
@@ -86,10 +89,10 @@
 <!--    </LinearLayout>-->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="50dp"
-        app:layout_constraintBottom_toTopOf="@+id/favorite_buttom">
+        app:layout_constraintBottom_toTopOf="@+id/favorite_buttom"
+        app:layout_constraintTop_toBottomOf="@+id/favorite_list_search">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -167,7 +170,7 @@
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:contentDescription="@string/title_favorite"
-                    android:src="@drawable/ic_favorites" />
+                    android:src="@drawable/ic_star" />
             </LinearLayout>
 
             <TextView
@@ -204,15 +207,17 @@
                 <ImageView
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:contentDescription="@string/title_history"
-                    android:src="@drawable/ic_clock_outline" />
+                    android:contentDescription="@string/title_contacts_logiphone"
+                    android:src="@drawable/ic_users_outline" />
             </LinearLayout>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="@string/title_history"
+                android:maxWidth="70dp"
+                android:textAlignment="center"
+                android:text="@string/title_contacts_logiphone"
                 android:textSize="12sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -241,15 +246,17 @@
                 <ImageView
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:contentDescription="@string/title_contacts"
-                    android:src="@drawable/ic_contacts" />
+                    android:contentDescription="@string/title_contacts_logiscope"
+                    android:src="@drawable/ic_users_outline" />
             </LinearLayout>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="@string/title_contacts"
+                android:maxWidth="70dp"
+                android:textAlignment="center"
+                android:text="@string/title_contacts_logiscope"
                 android:textSize="12sp"
                 android:textStyle="bold" />
         </LinearLayout>

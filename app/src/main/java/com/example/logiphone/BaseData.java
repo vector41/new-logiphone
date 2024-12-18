@@ -14,4 +14,6 @@ public class BaseData {
     public List<CallLog> callLogList;
     public List<Favorite> favoriteList;
     public List<Phone> phoneList;
+
+    public String _token;
 }

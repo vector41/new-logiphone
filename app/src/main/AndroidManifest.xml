@@ -25,6 +25,13 @@
         <activity android:name=".ui.FavoriteAddGroup" />
         <activity android:name=".ui.SmsSend" />
         <activity android:name=".ui.CallHistory" />
+        <activity android:name=".ui.ContactDetail" />
+        <activity android:name=".ui.ProfileCustom" />
+        <activity android:name=".ui.LogiScopeList" />
+        <activity android:name=".ui.LogiPhoneList" />
+        <activity android:name=".ui.MemberList" />
+        <activity android:name=".ui.ProfileDetail" />
+        <activity android:name=".ui.Login" />
     </application>
 
 </manifest>

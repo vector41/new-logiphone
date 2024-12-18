@@ -22,10 +22,10 @@
             android:src="@drawable/ic_back_arrow" />
 
         <TextView
-            android:id="@+id/favorite_add_title"
+            android:id="@+id/manager_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/title_favorite_add"
+            android:text="アイシン精機"
             android:textStyle="bold"
             android:textSize="24sp" />
     </LinearLayout>
@@ -50,7 +50,7 @@
             android:src="@drawable/ic_search" />
 
         <EditText
-            android:id="@+id/favorite_add_search_input"
+            android:id="@+id/member_search_input"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:autofillHints="@string/content_search"
@@ -68,7 +68,7 @@
     </LinearLayout>
 
     <ListView
-        android:id="@+id/favorite_add_list"
+        android:id="@+id/member_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:divider="@android:color/transparent"

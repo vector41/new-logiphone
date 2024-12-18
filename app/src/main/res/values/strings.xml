@@ -16,7 +16,12 @@
     <string name="title_favorite">お気に入り</string>
     <string name="title_favorite_add">連絡先を選択</string>
     <string name="title_history">履歴</string>
-    <string name="title_contacts">連絡先</string>
+    <string name="title_contacts_logiphone">連絡先 (LogiPhone)</string>
+    <string name="title_contacts_logiscope">連絡先 (LogiScope)</string>
+    <string name="title_contacts_info">連絡先情報</string>
+    <string name="title_detail_info">基本情報</string>
+    <string name="title_contact_create">連絡先の作成</string>
+    <string name="title_contact_edit">連絡先を編集</string>
 
     <string name="contacts_search_setting1">電話帳</string>
     <string name="contacts_search_setting1_share">共有電話帳</string>
@@ -30,9 +35,13 @@
     <string name="content_all">全て</string>
     <string name="content_sms">メッセージ</string>
     <string name="content_sms_warning">さんとテキスト メッセージで会話中 (SMS / MMS)</string>
+    <string name="content_call">通話</string>
     <string name="content_call_log">履歴を開く</string>
+    <string name="content_message">SMS</string>
+    <string name="content_manager">担当者</string>
     <string name="content_detail">詳細を開</string>
     <string name="content_add">追加</string>
+    <string name="content_save">保存</string>
     <string name="content_search">検索</string>
     <string name="content_search_setting">検索設定</string>
     <string name="content_company">会社</string>
@@ -41,4 +50,23 @@
     <string name="content_search_employee_title">利用者リスト</string>
     <string name="content_call_voice">音声通話を発信</string>
     <string name="content_call_video">ビデオ通話</string>
+    <string name="content_add_image">名刺を追加</string>
+    <string name="content_add_contact">新しい連絡先を作成</string>
+    <string name="content_email">Eメール</string>
+    <string name="content_password">パスワード</string>
+    <string name="content_login">ログイン</string>
+
+    <string name="hint_first_name">名</string>
+    <string name="hint_last_name">姓</string>
+    <string name="hint_middle_name">ミドルネーム</string>
+    <string name="hint_first_name_kana">よみがな (名)</string>
+    <string name="hint_last_name_kana">よみがな (姓)</string>
+    <string name="hint_middle_name_kana">よみがな (ミドルネーム)</string>
+    <string name="hint_nickname">ニックネーム</string>
+    <string name="hint_company">会社</string>
+    <string name="hint_department">部門</string>
+    <string name="hint_position">役職</string>
+    <string name="hint_search_keyword">検索語を入力します。</string>
+    <string name="hint_search_contacts">連絡先を検索</string>
+    <string name="hint_enter_message">テキスト メッセージ</string>
 </resources>
