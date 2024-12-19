@@ -32,7 +32,6 @@
             android:id="@+id/favorite_search_input"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:autofillHints="@string/content_search"
             android:inputType="text"
             android:maxHeight="16dp"
             android:hint="@string/hint_search_contacts"
@@ -44,52 +43,54 @@
             android:layout_gravity="center"
             android:background="@android:color/transparent"
             tools:ignore="LabelFor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/none_favorite_container"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="100dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        tools:ignore="MissingConstraints">
 
         <ImageView
             android:contentDescription="@string/content_search"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             android:layout_gravity="center"
-            android:src="@drawable/ic_nav_menu" />
+            android:src="@drawable/ic_add_favorite" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/message_add_favorite"
+            android:layout_marginTop="20sp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/visible_favorite_add_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/content_add_favorite"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/primary"
+            android:textSize="12sp" />
     </LinearLayout>
 
-<!--    <LinearLayout-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:orientation="vertical"-->
-<!--        app:layout_constraintBottom_toTopOf="@+id/favorite_buttom"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/favorite_search"-->
-<!--        tools:ignore="MissingConstraints">-->
-
-<!--        <ImageView-->
-<!--            android:contentDescription="@string/content_search"-->
-<!--            android:layout_width="200dp"-->
-<!--            android:layout_height="200dp"-->
-<!--            android:layout_gravity="center"-->
-<!--            android:src="@drawable/bg_favorite" />-->
-<!--        <TextView-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_gravity="center"-->
-<!--            android:text="ワンタップで連絡先に電話 をかけられます"-->
-<!--            android:layout_marginTop="20sp"-->
-<!--            android:layout_marginLeft="80dp"-->
-<!--            android:layout_marginRight="80dp"-->
-<!--            android:textAlignment="center"-->
-<!--            android:textSize="20sp" />-->
-<!--        <TextView-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_gravity="center"-->
-<!--            android:text="連絡先をお気に入りに追加"-->
-<!--            android:layout_marginTop="20dp"-->
-<!--            android:textAlignment="center"-->
-<!--            android:textColor="@color/primary"-->
-<!--            android:textSize="12sp" />-->
-<!--    </LinearLayout>-->
     <LinearLayout
+        android:id="@+id/favorite_container"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="100dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/favorite_buttom"
         app:layout_constraintTop_toBottomOf="@+id/favorite_list_search">
@@ -114,7 +115,7 @@
                 android:layout_weight="1" />
 
             <TextView
-                android:id="@+id/favorite_add"
+                android:id="@+id/btn_visible_favorite_add"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
@@ -194,7 +195,7 @@
             tools:ignore="UseCompoundDrawables">
 
             <LinearLayout
-                android:id="@+id/switch_recent"
+                android:id="@+id/btn_switch_logiphone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -234,6 +235,7 @@
             tools:ignore="UseCompoundDrawables">
 
             <LinearLayout
+                android:id="@+id/btn_switch_logiscope"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"

@@ -41,7 +41,7 @@
                 android:background="@drawable/bg_round_tab">
 
                 <ImageView
-                    android:contentDescription="@string/content_search"
+                    android:contentDescription="@string/content_email"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:layout_margin="10dp"
@@ -49,6 +49,7 @@
                     android:src="@drawable/ic_mail_outline" />
 
                 <EditText
+                    android:id="@+id/login_email"
                     android:layout_width="match_parent"
                     android:layout_height="24dp"
                     android:textSize="16sp"
@@ -80,7 +81,7 @@
                 android:background="@drawable/bg_round_tab">
 
                 <ImageView
-                    android:contentDescription="@string/content_search"
+                    android:contentDescription="@string/content_password"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:layout_margin="10dp"
@@ -88,6 +89,7 @@
                     android:src="@drawable/ic_key" />
 
                 <EditText
+                    android:id="@+id/login_password"
                     android:layout_width="match_parent"
                     android:layout_height="24dp"
                     android:textSize="16sp"
@@ -101,6 +103,7 @@
         </LinearLayout>
 
         <Button
+            android:id="@+id/submit_login"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:backgroundTint="@color/info"

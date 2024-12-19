@@ -22,6 +22,7 @@
     <string name="title_detail_info">基本情報</string>
     <string name="title_contact_create">連絡先の作成</string>
     <string name="title_contact_edit">連絡先を編集</string>
+    <string name="title_alert">通知</string>
 
     <string name="contacts_search_setting1">電話帳</string>
     <string name="contacts_search_setting1_share">共有電話帳</string>
@@ -55,6 +56,13 @@
     <string name="content_email">Eメール</string>
     <string name="content_password">パスワード</string>
     <string name="content_login">ログイン</string>
+    <string name="content_ok">OK</string>
+    <string name="content_cancel">Cancel</string>
+    <string name="content_success">成功</string>
+    <string name="content_warning">警告</string>
+    <string name="content_error">エラー</string>
+    <string name="content_info">情報</string>
+    <string name="content_add_favorite">連絡先をお気に入りに追加</string>
 
     <string name="hint_first_name">名</string>
     <string name="hint_last_name">姓</string>
@@ -69,4 +77,8 @@
     <string name="hint_search_keyword">検索語を入力します。</string>
     <string name="hint_search_contacts">連絡先を検索</string>
     <string name="hint_enter_message">テキスト メッセージ</string>
+
+    <string name="message_connection_error">サーバー接続エラー</string>
+    <string name="message_require_correct_login">ログイン情報を正しく入力してください。</string>
+    <string name="message_add_favorite">ワンタップで連絡先に電話 をかけられます</string>
 </resources>

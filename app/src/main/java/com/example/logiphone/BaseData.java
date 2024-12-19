@@ -16,4 +16,20 @@ public class BaseData {
     public List<Phone> phoneList;
 
     public String _token;
+    public int _id;
+    public String _email;
+    public int _type;
+
+    private static BaseData instance;
+    public static synchronized BaseData getInstance() {
+        if (instance == null) {
+            instance = new BaseData();
+        }
+
+        return instance;
+    }
+
+    private BaseData() {
+
+    }
 }

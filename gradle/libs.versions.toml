@@ -1,23 +1,35 @@
 [versions]
 agp = "8.5.0"
+gson = "2.10.1"
+javaWebsocket = "1.5.3"
 junit = "4.13.2"
 junitVersion = "1.2.1"
 espressoCore = "3.6.1"
 appcompat = "1.7.0"
+loggingInterceptor = "4.9.1"
 material = "1.12.0"
 constraintlayout = "2.2.0"
 navigationFragment = "2.8.5"
 navigationUi = "2.8.5"
+nordanMaterialDialogAndroid = "1.0.7"
+okhttp = "4.12.0"
+pusherJavaClient = "2.4.4"
 
 [libraries]
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+java-websocket = { module = "org.java-websocket:Java-WebSocket", version.ref = "javaWebsocket" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
 appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+logging-interceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "loggingInterceptor" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment", version.ref = "navigationFragment" }
 navigation-ui = { group = "androidx.navigation", name = "navigation-ui", version.ref = "navigationUi" }
+nordan-material-dialog-android = { module = "com.github.Dan629pl:nordan-material-dialog-android", version.ref = "nordanMaterialDialogAndroid" }
+okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp" }
+pusher-java-client = { module = "com.pusher:pusher-java-client", version.ref = "pusherJavaClient" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

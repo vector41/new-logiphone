@@ -56,212 +56,213 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="100dp"
         app:layout_constraintBottom_toTopOf="@+id/logiphone_bottom"
         app:layout_constraintTop_toBottomOf="@+id/logiphone_search">
 
-        <LinearLayout
-            android:id="@+id/contacts_search_setting"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintTop_toBottomOf="@+id/contacts_search_title"
-            tools:ignore="MissingConstraints">
+<!--        <LinearLayout-->
+<!--            android:id="@+id/contacts_search_setting"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/contacts_search_title"-->
+<!--            tools:ignore="MissingConstraints">-->
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/contacts_search_setting1"
-                android:textSize="14sp"
-                android:textColor="#000"
-                android:paddingStart="10dp"
-                android:layout_marginTop="10dp"
-                android:paddingEnd="10dp" />
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/contacts_search_setting1"-->
+<!--                android:textSize="14sp"-->
+<!--                android:textColor="#000"-->
+<!--                android:paddingStart="10dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:paddingEnd="10dp" />-->
 
-            <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:background="@color/search_contact_setting"
-                tools:ignore="UseCompoundDrawables">
+<!--            <LinearLayout-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                android:background="@color/search_contact_setting"-->
+<!--                tools:ignore="UseCompoundDrawables">-->
 
-                <Button
-                    android:id="@+id/search_mobile_all"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/btn_search_setting_disable"
-                    android:textColor="@color/black"
-                    app:cornerRadius="0dp"
-                    android:text="@string/content_all" />
+<!--                <Button-->
+<!--                    android:id="@+id/search_mobile_all"-->
+<!--                    android:layout_width="100dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="@drawable/btn_search_setting_disable"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    app:cornerRadius="0dp"-->
+<!--                    android:text="@string/content_all" />-->
 
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:layout_weight="1" />
+<!--                <View-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="0dp"-->
+<!--                    android:layout_weight="1" />-->
 
-                <Button
-                    android:id="@+id/search_mobile_shared"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/btn_search_setting_active"
-                    android:textColor="@color/primary"
-                    app:cornerRadius="0dp"
-                    android:text="@string/contacts_search_setting1_share" />
+<!--                <Button-->
+<!--                    android:id="@+id/search_mobile_shared"-->
+<!--                    android:layout_width="100dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="@drawable/btn_search_setting_active"-->
+<!--                    android:textColor="@color/primary"-->
+<!--                    app:cornerRadius="0dp"-->
+<!--                    android:text="@string/contacts_search_setting1_share" />-->
 
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:layout_weight="1" />
+<!--                <View-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="0dp"-->
+<!--                    android:layout_weight="1" />-->
 
-                <Button
-                    android:id="@+id/search_mobile_smartphone"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/btn_search_setting_disable"
-                    android:textColor="@color/black"
-                    app:cornerRadius="0dp"
-                    android:text="@string/contacts_search_setting1_phone" />
-            </LinearLayout>
+<!--                <Button-->
+<!--                    android:id="@+id/search_mobile_smartphone"-->
+<!--                    android:layout_width="100dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="@drawable/btn_search_setting_disable"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    app:cornerRadius="0dp"-->
+<!--                    android:text="@string/contacts_search_setting1_phone" />-->
+<!--            </LinearLayout>-->
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/contacts_search_setting2"
-                android:textSize="14sp"
-                android:textColor="#000"
-                android:paddingStart="10dp"
-                android:layout_marginTop="10dp"
-                android:paddingEnd="10dp" />
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/contacts_search_setting2"-->
+<!--                android:textSize="14sp"-->
+<!--                android:textColor="#000"-->
+<!--                android:paddingStart="10dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:paddingEnd="10dp" />-->
 
-            <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:background="@color/search_contact_setting"
-                tools:ignore="UseCompoundDrawables">
+<!--            <LinearLayout-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                android:background="@color/search_contact_setting"-->
+<!--                tools:ignore="UseCompoundDrawables">-->
 
-                <Button
-                    android:id="@+id/search_target_all"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/btn_search_setting_disable"
-                    android:textColor="@color/black"
-                    app:cornerRadius="0dp"
-                    android:text="@string/content_all" />
+<!--                <Button-->
+<!--                    android:id="@+id/search_target_all"-->
+<!--                    android:layout_width="100dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="@drawable/btn_search_setting_disable"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    app:cornerRadius="0dp"-->
+<!--                    android:text="@string/content_all" />-->
 
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:layout_weight="1" />
+<!--                <View-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="0dp"-->
+<!--                    android:layout_weight="1" />-->
 
-                <Button
-                    android:id="@+id/search_target_share"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/btn_search_setting_active"
-                    android:textColor="@color/black"
-                    app:cornerRadius="0dp"
-                    android:text="@string/content_company" />
+<!--                <Button-->
+<!--                    android:id="@+id/search_target_share"-->
+<!--                    android:layout_width="100dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="@drawable/btn_search_setting_active"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    app:cornerRadius="0dp"-->
+<!--                    android:text="@string/content_company" />-->
 
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:layout_weight="1" />
+<!--                <View-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="0dp"-->
+<!--                    android:layout_weight="1" />-->
 
-                <Button
-                    android:id="@+id/search_target_phone"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/btn_search_setting_disable"
-                    android:textColor="@color/black"
-                    app:cornerRadius="0dp"
-                    android:text="@string/content_person" />
-            </LinearLayout>
+<!--                <Button-->
+<!--                    android:id="@+id/search_target_phone"-->
+<!--                    android:layout_width="100dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="@drawable/btn_search_setting_disable"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    app:cornerRadius="0dp"-->
+<!--                    android:text="@string/content_person" />-->
+<!--            </LinearLayout>-->
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/contacts_search_setting3"
-                android:textSize="14sp"
-                android:textColor="#000"
-                android:paddingStart="10dp"
-                android:layout_marginTop="10dp"
-                android:paddingEnd="10dp" />
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/contacts_search_setting3"-->
+<!--                android:textSize="14sp"-->
+<!--                android:textColor="#000"-->
+<!--                android:paddingStart="10dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:paddingEnd="10dp" />-->
 
-            <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:background="@color/search_contact_setting"
-                tools:ignore="UseCompoundDrawables">
+<!--            <LinearLayout-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                android:background="@color/search_contact_setting"-->
+<!--                tools:ignore="UseCompoundDrawables">-->
 
-                <Button
-                    android:id="@+id/search_method_order"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/btn_search_setting_disable"
-                    android:textColor="@color/black"
-                    app:cornerRadius="0dp"
-                    android:text="@string/contacts_search_setting3_order" />
+<!--                <Button-->
+<!--                    android:id="@+id/search_method_order"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="@drawable/btn_search_setting_disable"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    app:cornerRadius="0dp"-->
+<!--                    android:text="@string/contacts_search_setting3_order" />-->
 
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:layout_weight="1" />
+<!--                <View-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="0dp"-->
+<!--                    android:layout_weight="1" />-->
 
-                <Button
-                    android:id="@+id/search_method_perfecture"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/btn_search_setting_disable"
-                    android:textColor="@color/black"
-                    app:cornerRadius="0dp"
-                    android:text="@string/contacts_search_setting3_prefecture" />
+<!--                <Button-->
+<!--                    android:id="@+id/search_method_perfecture"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="@drawable/btn_search_setting_disable"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    app:cornerRadius="0dp"-->
+<!--                    android:text="@string/contacts_search_setting3_prefecture" />-->
 
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:layout_weight="1" />
+<!--                <View-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="0dp"-->
+<!--                    android:layout_weight="1" />-->
 
-                <Button
-                    android:id="@+id/search_method_industry"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/btn_search_setting_disable"
-                    android:textColor="@color/black"
-                    app:cornerRadius="0dp"
-                    android:text="@string/contacts_search_setting3_industry" />
-            </LinearLayout>
-        </LinearLayout>
+<!--                <Button-->
+<!--                    android:id="@+id/search_method_industry"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="@drawable/btn_search_setting_disable"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    app:cornerRadius="0dp"-->
+<!--                    android:text="@string/contacts_search_setting3_industry" />-->
+<!--            </LinearLayout>-->
+<!--        </LinearLayout>-->
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_marginStart="23dp"
             android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:contentDescription="@string/title_favorite"
+                android:contentDescription="@string/content_add_contact"
                 android:src="@drawable/ic_user_add_outline" />
 
             <TextView
@@ -271,6 +272,7 @@
                 android:layout_marginStart="10dp"
                 android:text="@string/content_add_contact"
                 android:textSize="14sp"
+                android:textColor="@color/info"
                 android:textStyle="bold" />
         </LinearLayout>
 

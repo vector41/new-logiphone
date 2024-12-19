@@ -14,18 +14,18 @@
         android:orientation="vertical"
         android:clickable="true"
         android:focusable="true"
-        android:padding="8dp">
+        android:background="@drawable/bg_favorite_active">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
 
             <LinearLayout
                 android:id="@+id/favorite_avatar_container"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
-                android:background="@drawable/background_green"
                 android:orientation="horizontal">
 
                 <TextView
@@ -38,12 +38,13 @@
 
                 <LinearLayout
                     android:id="@+id/favorite_shared"
-                    android:layout_width="14dp"
-                    android:layout_height="14dp"
-                    android:background="@drawable/ic_share_white"
-                    android:translationX="-14dp"
-                    android:translationY="25dp"
-                    android:visibility="gone"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:background="@drawable/bg_avatar"
+                    android:backgroundTint="#2E2D2D"
+                    android:translationX="-18dp"
+                    android:translationY="32dp"
+                    android:visibility="invisible"
                     android:gravity="center">
 
                     <ImageView
@@ -81,6 +82,13 @@
                 android:src="@drawable/ic_call_outline" />
         </LinearLayout>
 
+        <View
+            android:id="@+id/favorite_spliter"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:visibility="gone"
+            android:background="#CACACA" />
+
         <LinearLayout
             android:id="@+id/favorite_contact_details"
             android:layout_width="match_parent"
@@ -89,12 +97,12 @@
             android:orientation="horizontal"
             android:paddingTop="8dp"
             android:paddingBottom="8dp"
-            android:layout_marginRight="0dp"
-            android:layout_marginLeft="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
             android:visibility="gone">
 
             <LinearLayout
-                android:id="@+id/favorite_sms"
+                android:id="@+id/btn_switch_sms"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -120,33 +128,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/favorite_log"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:padding="4dp"
-                tools:ignore="UseCompoundDrawables">
-
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:contentDescription="@string/content_call_log"
-                    android:src="@drawable/ic_recents"
-                    android:layout_gravity="center_horizontal" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/content_call_log"
-                    android:textSize="12sp"
-                    android:layout_marginTop="4dp"
-                    android:layout_gravity="center_horizontal" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/favorite_profile"
+                android:id="@+id/btn_switch_detail"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
