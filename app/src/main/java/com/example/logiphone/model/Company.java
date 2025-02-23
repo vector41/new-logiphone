@@ -2,38 +2,48 @@ package com.example.logiphone.model;
 
 public class Company {
     public int id;
-    public String company_name;
-    public String company_name_kana;
-    public String phone_number;
-    public String fax_number;
-    public String address;
-    public String role;
+    public String branch_name;
+    public String nickname;
+    public String zip;
+    public String other;
+    public String tel;
+    public String fax;
 
-    public int getId() {
+    public Company(int id, String branch_name, String nickname, String zip, String other, String tel, String fax) {
+        this.id = id;
+        this.branch_name = branch_name;
+        this.nickname = nickname;
+        this.zip = zip;
+        this.other = other;
+        this.tel = tel;
+        this.fax = fax;
+    }
+
+    public int getCompanyId() {
         return id;
     }
 
-    public String getCompanyName() {
-        return company_name;
+    public String getBranchName() {
+        return branch_name;
     }
 
-    public String getCompanyNameKana() {
-        return company_name_kana;
+    public String getNickname() {
+        return nickname;
     }
 
-    public String getPhoneNumber() {
-        return phone_number;
+    public String getZip() {
+        return zip;
     }
 
-    public String getFaxNumber() {
-        return fax_number;
+    public String getOther() {
+        return other;
     }
 
-    public String getAddress() {
-        return address;
+    public String getTel() {
+        return tel;
     }
 
-    public String getRole() {
-        return role;
+    public String getFax() {
+        return fax;
     }
 }

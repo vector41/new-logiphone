@@ -1,6 +1,7 @@
 package com.example.logiphone;
 
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 
 import com.example.logiphone.ui.FavoriteList;
@@ -15,10 +16,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        String _token = BaseData.getInstance()._token;
+        String _email = BaseData.getInstance().getAuthUserEmail(MainActivity.this);
         Intent intent;
 
-        if (Objects.equals(_token, null)) {
+        if (Objects.equals(_email, null) || Objects.equals(_email, "") || Objects.equals(_email, "null")) {
             intent = new Intent(this, Login.class);
         } else {
             intent = new Intent(this, FavoriteList.class);

@@ -19,7 +19,7 @@ public class ErrorDialog extends Dialog implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.modal_info);
+        setContentView(R.layout.modal_error);
 
         findViewById(R.id.submit_ok).setOnClickListener(this);
 

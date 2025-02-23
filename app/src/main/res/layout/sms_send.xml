@@ -20,7 +20,7 @@
             android:gravity="center_vertical">
 
             <ImageView
-                android:contentDescription="@string/content_search"
+                android:id="@+id/btn_arrow_back"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_margin="10dp"
@@ -32,11 +32,10 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_gravity="center"
-                android:background="@drawable/background_green"
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/favorite_avatar_nickname"
+                    android:id="@+id/sms_avatar_nickname"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textAlignment="center"
@@ -45,38 +44,38 @@
             </LinearLayout>
 
             <TextView
-                android:id="@+id/favorite_add_title"
+                android:id="@+id/sms_user_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:text="@string/title_favorite_add"
-                android:textSize="20sp" />
+                android:textStyle="bold"
+                android:textSize="16sp" />
         </LinearLayout>
 
-        <View
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_weight="1" />
+<!--        <View-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_weight="1" />-->
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content">-->
 
-            <ImageView
-                android:contentDescription="@string/content_search"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:layout_gravity="center"
-                android:src="@drawable/ic_call_outline" />
+<!--            <ImageView-->
+<!--                android:layout_width="24dp"-->
+<!--                android:layout_height="24dp"-->
+<!--                android:layout_marginEnd="20dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:src="@drawable/ic_call_outline" />-->
 
-            <ImageView
-                android:contentDescription="@string/content_search"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:layout_margin="10dp"
-                android:layout_gravity="center"
-                android:src="@drawable/ic_nav_menu" />
-        </LinearLayout>
+<!--&lt;!&ndash;            <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:contentDescription="@string/content_search"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="24dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="24dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_margin="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:src="@drawable/ic_nav_menu" />&ndash;&gt;-->
+<!--        </LinearLayout>-->
     </LinearLayout>
 
     <LinearLayout
@@ -134,21 +133,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <ImageView
-            android:contentDescription="@string/content_search"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_gravity="center"
-            android:layout_margin="5dp"
-            android:src="@drawable/ic_attach_file" />
+<!--        <ImageView-->
+<!--            android:contentDescription="@string/content_search"-->
+<!--            android:layout_width="24dp"-->
+<!--            android:layout_height="24dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_margin="5dp"-->
+<!--            android:src="@drawable/ic_attach_file" />-->
 
-        <ImageView
-            android:contentDescription="@string/content_search"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_margin="5dp"
-            android:layout_gravity="center"
-            android:src="@drawable/ic_attach_image" />
+<!--        <ImageView-->
+<!--            android:contentDescription="@string/content_search"-->
+<!--            android:layout_width="24dp"-->
+<!--            android:layout_height="24dp"-->
+<!--            android:layout_margin="5dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:src="@drawable/ic_attach_image" />-->
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -156,33 +155,38 @@
             android:layout_margin="10dp"
             android:orientation="horizontal"
             android:background="@drawable/input_search_radius"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
-            android:paddingStart="12dp"
-            android:paddingEnd="12dp"
             tools:ignore="MissingConstraints">
 
             <EditText
-                android:id="@+id/favorite_search_input"
+                android:id="@+id/sms_content_input"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:autofillHints="@string/content_search"
                 android:layout_weight="1"
                 android:textSize="16sp"
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
+                android:layout_gravity="center_vertical"
                 android:hint="@string/hint_enter_message"
-                android:layout_margin="5dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
                 android:singleLine="true"
                 android:background="@android:color/transparent"
                 tools:ignore="LabelFor" />
 
-            <ImageView
-                android:contentDescription="@string/content_search"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:layout_gravity="center"
-                android:src="@drawable/ic_emoji" />
+            <LinearLayout
+                android:id="@+id/btn_send_sms"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:background="@drawable/bg_avatar"
+                android:backgroundTint="#C8C8C8">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_send_sms" />
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

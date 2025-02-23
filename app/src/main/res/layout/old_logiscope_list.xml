@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/old_logiscope_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:background="@drawable/input_search_radius"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="12dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:contentDescription="@string/content_search"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_search" />
+
+        <EditText
+            android:id="@+id/old_logiscope_search_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:autofillHints="@string/content_search"
+            android:inputType="text"
+            android:maxHeight="16dp"
+            android:layout_weight="1"
+            android:hint="@string/hint_search_contacts"
+            android:textSize="16sp"
+            android:singleLine="true"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            tools:ignore="LabelFor" />
+
+        <ImageView
+            android:id="@+id/btn_old_logi_collapse"
+            android:contentDescription="@string/content_search"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_tab" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintBottom_toTopOf="@+id/old_logiscope_bottom"
+        app:layout_constraintTop_toBottomOf="@+id/old_logiscope_search">
+
+        <LinearLayout
+            android:id="@+id/old_logiscope_search_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@+id/contacts_search_title"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contacts_search_setting2"
+                android:textSize="14sp"
+                android:textColor="#000"
+                android:paddingStart="10dp"
+                android:layout_marginTop="10dp"
+                android:paddingEnd="10dp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:background="@color/search_contact_setting"
+                tools:ignore="UseCompoundDrawables">
+
+                <Button
+                    android:id="@+id/search_target_user"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_search_setting_active"
+                    android:textColor="@color/black"
+                    app:cornerRadius="0dp"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="@string/content_person" />
+
+                <Button
+                    android:id="@+id/search_target_company"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_search_setting_disable"
+                    android:textColor="@color/black"
+                    app:cornerRadius="0dp"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="@string/content_company" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contacts_search_setting3"
+                android:textSize="14sp"
+                android:textColor="#000"
+                android:paddingStart="10dp"
+                android:layout_marginTop="10dp"
+                android:paddingEnd="10dp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:background="@color/search_contact_setting"
+                tools:ignore="UseCompoundDrawables">
+
+                <Button
+                    android:id="@+id/search_method_normal"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_search_setting_active"
+                    android:textColor="@color/black"
+                    app:cornerRadius="0dp"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="@string/contacts_search_setting_normal" />
+
+                <Button
+                    android:id="@+id/search_method_order"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_search_setting_disable"
+                    android:textColor="@color/black"
+                    app:cornerRadius="0dp"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="@string/contacts_search_setting_order" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/old_logiscope_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@android:color/transparent"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_marginTop="10dp"
+            app:flow_horizontalAlign="start"
+            app:flow_verticalAlign="top" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/old_logiscope_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bottom_menu"
+        android:paddingStart="30dp"
+        android:paddingTop="12dp"
+        android:paddingEnd="30dp"
+        android:paddingBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables,UselessParent">
+
+            <LinearLayout
+                android:id="@+id/btn_switch_favorites"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="2dp"
+                android:gravity="center"
+                android:minWidth="70dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:contentDescription="@string/title_favorite"
+                    android:src="@drawable/ic_star_outline" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/title_favorite"
+                android:maxWidth="100dp"
+                android:minWidth="80dp"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <LinearLayout
+                android:id="@+id/btn_switch_new_logiscope"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="2dp"
+                android:gravity="center"
+                android:minWidth="70dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:contentDescription="@string/title_contacts_logiscope_new"
+                    android:src="@drawable/ic_users_outline" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:maxWidth="100dp"
+                android:minWidth="80dp"
+                android:textAlignment="center"
+                android:text="@string/title_contacts_logiscope_new"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="2dp"
+                android:gravity="center"
+                android:background="@drawable/bg_round_tab"
+                android:backgroundTint="@color/bottom_active"
+                android:minWidth="70dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:contentDescription="@string/title_contacts_logiscope_old"
+                    android:src="@drawable/ic_users" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:maxWidth="100dp"
+                android:minWidth="80dp"
+                android:textAlignment="center"
+                android:text="@string/title_contacts_logiscope_old"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="4dp"
+        android:contentDescription="@string/content_logout"
+        android:src="@drawable/ic_logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,8 +8,8 @@ android {
 
     defaultConfig {
         applicationId = "com.example.logiphone"
-        minSdk = 29
-        targetSdk = 34
+        minSdk = 26
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -43,9 +43,7 @@ dependencies {
     implementation(libs.navigation.ui)
     implementation(libs.java.websocket)
     implementation(libs.okhttp)
-//    implementation(libs.logging.interceptor)
     implementation(libs.gson)
-//    implementation(libs.pusher.java.client)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)

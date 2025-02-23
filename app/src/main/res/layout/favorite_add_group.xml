@@ -14,7 +14,8 @@
         tools:ignore="MissingConstraints">
 
         <ImageView
-            android:contentDescription="@string/content_search"
+            android:id="@+id/btn_arrow_back"
+            android:contentDescription="@string/title_favorite_add"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_margin="10dp"

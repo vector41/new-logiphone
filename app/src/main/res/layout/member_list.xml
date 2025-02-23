@@ -14,7 +14,7 @@
         tools:ignore="MissingConstraints">
 
         <ImageView
-            android:contentDescription="@string/content_search"
+            android:id="@+id/btn_arrow_back"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_margin="10dp"
@@ -25,7 +25,7 @@
             android:id="@+id/manager_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="アイシン精機"
+            android:text="@string/content_member_list"
             android:textStyle="bold"
             android:textSize="24sp" />
     </LinearLayout>

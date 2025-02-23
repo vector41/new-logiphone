@@ -10,7 +10,6 @@ public class User {
     public String second_name;
     public String first_name_kana;
     public String second_name_kana;
-    public String nickname;
     public String role;
     public String role_screen;
     public String birth_date;
@@ -54,10 +53,6 @@ public class User {
 
     public String getSecondNameKana() {
         return second_name_kana;
-    }
-
-    public String getNickname() {
-        return nickname;
     }
 
     public String getRole() {

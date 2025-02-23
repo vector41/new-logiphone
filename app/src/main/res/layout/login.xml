@@ -38,13 +38,14 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
                 android:background="@drawable/bg_round_tab">
 
                 <ImageView
                     android:contentDescription="@string/content_email"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:layout_margin="10dp"
                     android:layout_gravity="center_vertical"
                     android:src="@drawable/ic_mail_outline" />
 
@@ -53,7 +54,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="24dp"
                     android:textSize="16sp"
-                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="10dp"
                     android:layout_gravity="center"
                     android:singleLine="true"
                     android:ems="10"
@@ -78,13 +79,14 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
                 android:background="@drawable/bg_round_tab">
 
                 <ImageView
                     android:contentDescription="@string/content_password"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:layout_margin="10dp"
                     android:layout_gravity="center_vertical"
                     android:src="@drawable/ic_key" />
 
@@ -93,7 +95,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="24dp"
                     android:textSize="16sp"
-                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="10dp"
                     android:layout_gravity="center"
                     android:singleLine="true"
                     android:ems="10"

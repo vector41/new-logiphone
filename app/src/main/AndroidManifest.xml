@@ -5,21 +5,32 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACTION_MANAGE_OVERLAY_PERMISSION" />
+    <uses-permission android:name="android.permission.BIND_ACCESSIBILITY_SERVICE"
+        tools:ignore="ProtectedPermissions" />
 
-    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS"/>
 
     <uses-feature android:name="android.hardware.telephony" android:required="true" />
+    <uses-feature android:name="android.hardware.camera" android:required="true" />
 
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/logo_main"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/ic_launcher"
+        android:roundIcon="@drawable/logo_startup"
         android:supportsRtl="true"
         android:usesCleartextTraffic="true"
         android:theme="@style/Theme.LogiPhone"
@@ -38,12 +49,33 @@
         <activity android:name=".ui.SmsSend" />
         <activity android:name=".ui.CallHistory" />
         <activity android:name=".ui.ContactDetail" />
+        <activity android:name=".ui.CompanyDetail" />
         <activity android:name=".ui.ProfileCustom" />
-        <activity android:name=".ui.LogiScopeList" />
-        <activity android:name=".ui.LogiPhoneList" />
-        <activity android:name=".ui.MemberList" />
         <activity android:name=".ui.ProfileDetail" />
+        <activity android:name=".ui.ProfileCreate" />
+        <activity android:name=".ui.NewLogiScopeList" />
+        <activity android:name=".ui.OldLogiScopeList" />
+        <activity android:name=".ui.MemberList" />
         <activity android:name=".ui.Login" />
+
+        <service
+            android:name=".PhoneService"
+            android:exported="true"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
+            android:label="@string/app_name">
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_server" />
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".CallStateService" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
