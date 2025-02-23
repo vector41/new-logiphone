@@ -16,8 +16,8 @@
     <string name="title_favorite">お気に入り</string>
     <string name="title_favorite_add">連絡先を選択</string>
     <string name="title_history">履歴</string>
-    <string name="title_contacts_logiphone">連絡先 (LogiPhone)</string>
-    <string name="title_contacts_logiscope">連絡先 (LogiScope)</string>
+    <string name="title_contacts_logiscope_old">旧型ロジスコ</string>
+    <string name="title_contacts_logiscope_new">新型ロジスコ</string>
     <string name="title_contacts_info">連絡先情報</string>
     <string name="title_detail_info">基本情報</string>
     <string name="title_contact_create">連絡先の作成</string>
@@ -29,9 +29,8 @@
     <string name="contacts_search_setting1_phone">スマホのみ</string>
     <string name="contacts_search_setting2">対象</string>
     <string name="contacts_search_setting3">検索方法</string>
-    <string name="contacts_search_setting3_order">五十音</string>
-    <string name="contacts_search_setting3_prefecture">県別</string>
-    <string name="contacts_search_setting3_industry">業種別</string>
+    <string name="contacts_search_setting_order">五十音検索</string>
+    <string name="contacts_search_setting_normal">一般検索</string>
 
     <string name="content_all">全て</string>
     <string name="content_sms">メッセージ</string>
@@ -53,9 +52,12 @@
     <string name="content_call_video">ビデオ通話</string>
     <string name="content_add_image">名刺を追加</string>
     <string name="content_add_contact">新しい連絡先を作成</string>
+    <string name="content_take_photo">写真を撮る</string>
+    <string name="content_upload_photo">アップロード</string>
     <string name="content_email">Eメール</string>
     <string name="content_password">パスワード</string>
     <string name="content_login">ログイン</string>
+    <string name="content_logout">ログアウト</string>
     <string name="content_ok">OK</string>
     <string name="content_cancel">Cancel</string>
     <string name="content_success">成功</string>
@@ -63,22 +65,43 @@
     <string name="content_error">エラー</string>
     <string name="content_info">情報</string>
     <string name="content_add_favorite">連絡先をお気に入りに追加</string>
+    <string name="content_male">男性</string>
+    <string name="content_female">女性</string>
+    <string name="content_add_phone">新しい電話を追加</string>
+    <string name="content_no_information">情報なし</string>
+    <string name="content_member_list">会社員一覧</string>
 
     <string name="hint_first_name">名</string>
     <string name="hint_last_name">姓</string>
-    <string name="hint_middle_name">ミドルネーム</string>
     <string name="hint_first_name_kana">よみがな (名)</string>
     <string name="hint_last_name_kana">よみがな (姓)</string>
-    <string name="hint_middle_name_kana">よみがな (ミドルネーム)</string>
     <string name="hint_nickname">ニックネーム</string>
+    <string name="hint_email">Eメール</string>
+    <string name="hint_password">パスワード</string>
     <string name="hint_company">会社</string>
     <string name="hint_department">部門</string>
     <string name="hint_position">役職</string>
+    <string name="hint_birth_date">生年月日</string>
+    <string name="hint_blood">血液型</string>
+    <string name="hint_gender">性別</string>
+    <string name="hint_zipcode">郵便番号</string>
+    <string name="hint_city">市</string>
+    <string name="hint_prefecture">県</string>
     <string name="hint_search_keyword">検索語を入力します。</string>
     <string name="hint_search_contacts">連絡先を検索</string>
     <string name="hint_enter_message">テキスト メッセージ</string>
+    <string name="hint_phone_number">電話番号</string>
+    <string name="hint_phone_type">ラベル</string>
 
     <string name="message_connection_error">サーバー接続エラー</string>
     <string name="message_require_correct_login">ログイン情報を正しく入力してください。</string>
-    <string name="message_add_favorite">ワンタップで連絡先に電話 をかけられます</string>
+    <string name="message_get_data_error">データのロードに失敗しました。 再起動してください。</string>
+    <string name="message_add_favorite">ワンタップで連絡先に電話 をかけられます。</string>
+    <string name="message_remove_favorite_list">お気に入りリストから削除しました。</string>
+    <string name="message_add_favorite_list">お気に入りリストに追加しました。</string>
+    <string name="message_add_profile">新しいユーザーを追加しました。</string>
+    <string name="message_update_profile">情報変更に成功しました。</string>
+    <string name="message_require_add">メール、パスワード、名前、会社名、部署名を入力する必要があります。</string>
+    <string name="message_require_update">メール、名前、会社名、部署名を入力する必要があります。</string>
+    <string name="message_none_phone">データベースに登録されている電話番号がありません。</string>
 </resources>

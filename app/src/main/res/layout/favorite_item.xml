@@ -5,7 +5,10 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="5dp">
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
 
     <LinearLayout
         android:id="@+id/favorite_list_item"
@@ -13,8 +16,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:clickable="true"
-        android:focusable="true"
-        android:background="@drawable/bg_favorite_active">
+        android:focusable="true">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -23,35 +25,56 @@
 
             <LinearLayout
                 android:id="@+id/favorite_avatar_container"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:orientation="horizontal">
+                android:layout_width="40dp"
+                android:layout_height="40dp">
 
                 <TextView
                     android:id="@+id/favorite_avatar_nickname"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textAlignment="center"
-                    android:textSize="24sp"
+                    android:gravity="center"
+                    android:textSize="20sp"
                     android:textColor="@color/white" />
+            </LinearLayout>
 
-                <LinearLayout
-                    android:id="@+id/favorite_shared"
-                    android:layout_width="16dp"
-                    android:layout_height="16dp"
-                    android:background="@drawable/bg_avatar"
-                    android:backgroundTint="#2E2D2D"
-                    android:translationX="-18dp"
-                    android:translationY="32dp"
-                    android:visibility="invisible"
-                    android:gravity="center">
+            <LinearLayout
+                android:id="@+id/favorite_shared"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:background="@drawable/bg_avatar"
+                android:backgroundTint="#2E2D2D"
+                android:translationX="-10dp"
+                android:translationY="23dp"
+                android:visibility="invisible"
+                android:gravity="center">
 
-                    <ImageView
-                        android:layout_width="10dp"
-                        android:layout_height="10dp"
-                        android:src="@drawable/ic_share_white" />
-                </LinearLayout>
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:contentDescription="@string/content_ok"
+                    android:src="@drawable/ic_share_white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/favorite_tel_badge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/badge"
+                android:layout_gravity="center_vertical"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:translationX="-24dp"
+                android:translationY="-8dp"
+                android:paddingBottom="2dp"
+                android:visibility="invisible">
+
+                <TextView
+                    android:id="@+id/favorite_tel_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white" />
             </LinearLayout>
 
             <LinearLayout
@@ -59,26 +82,26 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:layout_gravity="center"
-                android:layout_marginStart="16dp">
+                android:layout_gravity="center">
 
                 <TextView
                     android:id="@+id/favorite_item_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="20sp"
+                    android:textSize="16sp"
                     android:textStyle="bold"
                     android:textColor="@android:color/black" />
             </LinearLayout>
 
             <ImageView
-                android:id="@+id/favorite_ic_call"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:id="@+id/btn_favorite_call"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
                 android:layout_gravity="center"
                 android:visibility="visible"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
+                android:contentDescription="@string/content_call"
                 android:src="@drawable/ic_call_outline" />
         </LinearLayout>
 
@@ -123,6 +146,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/content_sms"
                     android:textSize="12sp"
+                    android:textStyle="bold"
                     android:layout_marginTop="4dp"
                     android:layout_gravity="center_horizontal" />
             </LinearLayout>
@@ -149,6 +173,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/content_detail"
                     android:textSize="12sp"
+                    android:textStyle="bold"
                     android:layout_marginTop="4dp"
                     android:layout_gravity="center_horizontal" />
             </LinearLayout>
